@@ -1854,7 +1854,7 @@ class SLinux(Linux):
         :param cpus: CPU for this model.
         :param mem: memory for this model.
         '''
-        self._constraints = ConstraintSet()
+        self._constraints = constraints
         self.random = 0
         self.symbolic_files=symbolic_files
         super(SLinux, self).__init__(programs, argv, envp)
